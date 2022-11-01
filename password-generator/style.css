@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(59, 17, 15);
+    font-family: "Kanit", sans-serif;
+    margin: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+
+.pw-container {
+    background-color:rgb(32, 9, 9);
+    max-width: 1900px;
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.5);
+}
+
+.pass-header {
+    padding: 1rem;
+}
+
+.pw {
+    background-color: rgb(59, 17, 15);
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 1.5rem;
+    padding: 1rem;
+    
+}
+
+.pw button {
+    position: absolute;
+    font-family: inherit;
+    padding: 0.20rem 0.45rem;
+    bottom: 0;
+    left: 50%;
+    transform: translate(0, 50%);
+    background-color: rgb(187, 150, 148);
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.2s;
+    cursor: pointer;
+    font-weight: bold;
+}
+.pw:hover button {
+    opacity: 1;
+    transform: translate(-100%, -80%, -60%);
+}
+.pass-body {
+    padding: 0 1rem 1rem;
+}
+
+.form-control {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+    color: #eee;
+}
+
+.generate {
+    display: block;
+    background-color: rgb(195, 177, 240);
+    color:blue;
+    font-weight: bold;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    width: 100%;
+    margin-top: 1rem;
+    cursor: pointer;
+}
